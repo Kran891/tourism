@@ -29,11 +29,11 @@ const Carousel:React.FC=()=>{
             <img src="https://cdn-images-rayna.imgix.net/imgiximages/Imagewise-Banner/429/formula-1-abu-dhabi-grand-prix-web-bnr.jpg?w=1920&h=540&auto=compress%2Cformat" alt="" />
         </div>
         <div className="flex justify-center">
-        <ul className="absolute flex right-auto left-auto  *:flex *:items-center top-0 m-auto *:h-10 *:text-black w-[500px]  *:rounded-lg *:px-4  *:shrink-0 justify-between">
-            <li className="bg-orange-500 *:text-[#FFFCFA]"><span className="px-2 font-bold"><BsBinoculars color="white"/></span><span>Activities</span></li>
-            <li className="bg-[#FFE9E2] *:text-black"><span className="px-2"><BsBuildings /></span><span>Hotels</span></li>
-            <li className="bg-[#FFE9E2] *:text-black"><span className="px-2"><TbBeach /></span><span>Holidays</span></li>
-            <li className="bg-[#FFE9E2] text-black"><span className="px-2"><LiaPassportSolid /></span><span>Visa</span></li>
+        <ul className="absolute flex right-auto left-auto  *:flex *:items-center top-0 m-auto *:h-10 *:text-black w-[600px]   *:rounded-lg *:px-7  *:shrink-0 justify-between">
+            <li className="bg-orange-500 *:text-[#FFFCFA]"><span className="px-2 font-bold"><BsBinoculars color="white"/></span><span className="font-semibold">Activities</span></li>
+            <li className="bg-[#FFE9E2] *:text-black"><span className="px-2"><BsBuildings /></span><span className="font-semibold">Hotels</span></li>
+            <li className="bg-[#FFE9E2] *:text-black"><span className="px-2"><TbBeach size={20}/></span><span className="font-semibold">Holidays</span></li>
+            <li className="bg-[#FFE9E2] text-black"><span className="px-2"><LiaPassportSolid size={20}/></span><span className="font-semibold">Visa</span></li>
         </ul>
         </div>
         <div></div>
