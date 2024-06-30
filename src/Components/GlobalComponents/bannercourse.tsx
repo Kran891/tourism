@@ -38,8 +38,7 @@ const Carousel:React.FC=()=>{
         </div>
         <div></div>
     </div>
-    <hr></hr>
-    <br /><br /><br />
+    
     </>
 }
 export default Carousel
