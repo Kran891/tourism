@@ -15,9 +15,9 @@ const Carousel:React.FC=()=>{
                         </div>
                         <div className="w-1/3 col-lg-9 col-md-9 col-sm-12 mt-7 font-normal">
                             <div className="flex *:flex justify-evenly text-sm font-medium">
-                                <a>Helpline<FaCaretDown/></a>
-                                <a>English<FaCaretDown/></a>
-                                <a>AED<FaCaretDown/></a>
+                                <a>Helpline <span className="mt-1"><FaCaretDown/></span></a>
+                                <a>English<span className="mt-1"><FaCaretDown/></span></a>
+                                <a>AED<span className="mt-1"><FaCaretDown/></span></a>
                                 <a className='mr-2 border-r-2'><CiUser size={20}/>Log In</a>
                             </div>
                         </div>
