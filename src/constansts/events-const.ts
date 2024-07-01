@@ -8,7 +8,7 @@ export interface Events{
     header: string
 }
 const EVENTS_CONST:Events[]=[
-    {header:"Fontana Circus 2024 Abu Dhabi",imgageUrl:"https://cdn.platinumlist.net/upload/event/fontana_showcircus_2024_in_abu_dhabi_2024_jul_02_fontana_circus_tent_marina_mall_abu_dhabi_89991-full-en1701855123.jpg",rating:0,actualPrice:150,offerPrice:135,reviews:0,url:"#"},
+    {header:"Fontana Circus 2024 Abu Dhabi",imgageUrl:"https://cdn-images-rayna.imgix.net/imgiximages//Tour-Images//false-509151//FONTANA%20Circus%202024%20Abu%20Dhabi%20Front.png?w=270&h=309&auto=compress%2Cformat&crop=faces&fit=min",rating:0,actualPrice:150,offerPrice:135,reviews:0,url:"#"},
     {header:"Formula 1 Abu Dhabi Grand Prix 2024",imgageUrl:"https://cdn-images-rayna.imgix.net/imgiximages//Tour-Images//false-509047//mj6U9vSB-YMC-North-Grandstand.jpg?w=270&h=309&auto=compress%2Cformat&crop=faces&fit=min",rating:0,actualPrice:2749,reviews:0,url:"#"},
     {header:"Johanna Pichlmair Classical Music Show",imgageUrl:"https://cdn-images-rayna.imgix.net/imgiximages//Tour-Images//false-509148//400%20x%20230%20copy%20B%20Praak.jpg?w=270&h=309&auto=compress%2Cformat&crop=faces&fit=min",rating:0,actualPrice:500,offerPrice:475,reviews:0,url:"#"},
     {header :"Varun Grover live in Dubai",imgageUrl:"https://cdn-images-rayna.imgix.net/imgiximages//Tour-Images//false-509130//front%20varun%20grover.jpg?w=270&h=309&auto=compress%2Cformat&crop=faces&fit=min",rating:0,actualPrice:129,offerPrice:125,reviews:0,url:"#"}
