@@ -11,14 +11,14 @@ const Carousel:React.FC=()=>{
                 <div className="container">
                     <div className="flex">
                         <div className=" w-2/3 col-lg-3 col-md-3 col-sm-12 float-left">
-                            <img className='w-52 h-22 pt-2 pb-5 pl-12' src="https://d1i3enf1i5tb1f.cloudfront.net/assets/Images/AGT-06437/raynatourslogo.png" alt="logo" />
+                            <a href="#"><img className='w-52 h-22 pt-2 pb-5 pl-12' src="https://d1i3enf1i5tb1f.cloudfront.net/assets/Images/AGT-06437/raynatourslogo.png" alt="logo" /></a>
                         </div>
                         <div className="w-1/3 col-lg-9 col-md-9 col-sm-12 mt-7 font-normal">
                             <div className="flex *:flex justify-evenly text-sm font-medium">
-                                <a>Helpline <span className="mt-1"><FaCaretDown/></span></a>
-                                <a>English<span className="mt-1"><FaCaretDown/></span></a>
-                                <a>AED<span className="mt-1"><FaCaretDown/></span></a>
-                                <a className='mr-2 border-r-2'><CiUser size={20}/>Log In</a>
+                                <a href="#"><span className="flex items-center">Helpline<FaCaretDown/></span></a>
+                                <a href="#"><span className="flex items-center">English<FaCaretDown/></span></a>
+                                <a href="#"><span className="flex items-center">AED<FaCaretDown/></span></a>
+                                <a href="#" className='mr-2 pr-2 border-r-2'><CiUser size={20}/>Log In</a>
                             </div>
                         </div>
                     </div>
