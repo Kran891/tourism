@@ -7,12 +7,12 @@ interface Props{
     Card?: typeof CityCards
     data: CityImage[]
 }
-const Card:React.FC<Props> = ({heading,description,Card:CityCards,data}) => {
+const Card:React.FC<Props> = ({heading,description,Card,data}) => {
   return <>
   <div className='m-14 mt-4'>
     <h1 className='font-bold text-[20px]'>{heading}</h1>
     <p className='text-[#707081] text-[13px] pt-2 pb-3'>{description}</p>
-    {CityCards && <CityCards  data={data}/>}
+    {Card && <Card  data={data}/>}
   </div>
   </>
     
