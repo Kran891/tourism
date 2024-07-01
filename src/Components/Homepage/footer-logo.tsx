@@ -4,7 +4,7 @@ import { FaSquareXTwitter ,FaLinkedin,FaSquareInstagram,FaSquareYoutube} from "r
 const FooterLogo:React.FC=()=>{
     return <div className="w-full flex-col bg-[#FEF7F5] *:shrink-0">
        <div className="pt-10 mb-8  flex justify-center">
-        <img className="w-24 h-15 block" src="./raynatourslogo.png" alt="Rayna Tours Logo" />
+        <img className="w-24 h-15 block" src="https://d1i3enf1i5tb1f.cloudfront.net/assets/Images/AGT-06437/raynatourslogo.png" alt="Rayna Tours Logo" />
        </div>
        <div className="*:flex *:justify-center *:mb-1 *:shrink-0">
         <ul className="flex [#333333] *:border-r *:px-1">
