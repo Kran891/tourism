@@ -5,10 +5,12 @@ interface Props {
     width: string
 }
 const BodyCards: React.FC<Props> = ({ data, width }) => {
+    const w=`sm:w-[${width}]`
+    
     return <>
-        <div className="md:flex grid grid-cols-2 pb-2 *:shadow-lg  *:shrink-0 overflow-x-auto *:overflow-hidden gap-[1.5%]">
+        <div className="sm:flex grid grid-cols-2 pb-2 *:shadow-lg  *:shrink-0 overflow-x-auto *:overflow-hidden gap-[1.5%]">
             {data.map(ele => {
-                return <a className={`md:w-[${width}] rounded-2xl`} href={ele.url}><div className="relative">
+                return <a className={`${w} rounded-2xl`} href={ele.url}><div className="relative">
                     <img src={ele.imgageUrl} className="h-[150px] w-full object-cover" alt={ele.header} />
                     <div className="mt-2 mx-1 pb-2">
                         <h2 className="font-semibold text-center">{ele.header}</h2>
