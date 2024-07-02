@@ -15,7 +15,7 @@ import { EVENTS_CONST } from './constansts/events-const';
 function App() {
   return (
     <div className='relative'>
-    // <Carousel />
+     {/* <Carousel /> */}
       {/* <Header /> */}
       <Card heading='Top Cities to Visit' description='Experience the thrill of discovering off-the-beaten-path gems and famous landmarks in top destinations worldwide - your wanderlust awaits!' Card={CityCards} data={CITYIMAGES}/>
       <Card heading='Most Popular Events & Concerts in UAE' description={`Dive into a mesmerizing blend of culture, music, and entertainment at the UAE's hottest events and concerts!`} Card={BodyCards} data={EVENTS_CONST} width='25%'/>
