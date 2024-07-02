@@ -6,9 +6,9 @@ interface Props {
 }
 const BodyCards: React.FC<Props> = ({ data, width }) => {
     return <>
-        <div className="flex *:shadow-lg *:overflow-hidden gap-[1.5%]">
+        <div className="lg:flex grid grid-cols-2 *:shadow-lg *:overflow-hidden gap-[1.5%]">
             {data.map(ele => {
-                return <a className="w-[25%] rounded-lg" href={ele.url}><div className="relative">
+                return <a className="w-full lg:w-[25%] rounded-lg" href={ele.url}><div className="relative">
                     <img src={ele.imgageUrl} className="h-[150px] w-full" alt={ele.header} />
                     <h2 className="font-semibold">{ele.header}</h2>
                    
