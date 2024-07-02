@@ -1,36 +1,38 @@
 import { IoStarSharp } from "react-icons/io5";
 import { Events } from "../../constansts/events-const";
-interface Props{
-    data:Events[],
-    width:string
+interface Props {
+    data: Events[],
+    width: string
 }
-const BodyCards:React.FC<Props>=({data,width})=>{
-    return<>
-    <div className="flex *:shadow-lg *:overflow-hidden gap-[1.5%]">
-    {data.map(ele=>{
-        return <a className="w-[22%] rounded-lg" href={ele.url}><div>
-        <img src={ele.imgageUrl} alt={ele.header} />
-        <h2>{ele.header}</h2>
-        <div className={`flex justify-between items-end`}>
-            <div>
-                <p>{ele.reviews} Reviews</p>
-                <p className="flex"><span className="flex">{[...Array(ele.rating)].map((_,i)=>{
-                      return <IoStarSharp color="#F36911"/>
-                })}</span>
-                <span className="flex">{[...Array(5-ele.rating)].map((_,i)=>{
-                      return <IoStarSharp color="#FFE9E2"/>
-                })}</span>
-                </p> 
-            </div>
-            <div>
-                <p className="text-[12px] text-gray-300">Per Person from</p>
-                <p className="font-bold">AED {ele.offerPrice || ele.actualPrice}</p>
-                {ele.offerPrice && <p className="line-through text-gray-300">AED{ele.actualPrice}</p>}
-            </div>
+const BodyCards: React.FC<Props> = ({ data, width }) => {
+    return <>
+        <div className="flex *:shadow-lg *:overflow-hidden gap-[1.5%]">
+            {data.map(ele => {
+                return <a className="w-[25%] rounded-lg" href={ele.url}><div className="relative">
+                    <img src={ele.imgageUrl} className="h-[150px] w-full" alt={ele.header} />
+                    <h2 className="font-semibold">{ele.header}</h2>
+                   
+                        <div className={`flex bottom-0   justify-between items-end m-2 mt-auto`}>
+                            <div>
+                                <p className="text-gray-400 text-[12px]">{ele.reviews} Reviews</p>
+                                <p className="flex"><span className="flex">{[...Array(ele.rating)].map((_, i) => {
+                                    return <IoStarSharp color="#F36911" />
+                                })}</span>
+                                    <span className="flex">{[...Array(5 - ele.rating)].map((_, i) => {
+                                        return <IoStarSharp color="#FFE9E2" />
+                                    })}</span>
+                                </p>
+                            </div>
+                            <div className="text-right">
+                                <p className="text-[12px] text-gray-400">Per Person from</p>
+                                <p className="font-bold text-sm">AED {ele.offerPrice || ele.actualPrice}</p>
+                                {ele.offerPrice && <p className="line-through text-[12px] text-gray-300">AED{ele.actualPrice}</p>}
+                            </div>
+                        </div>
+                   
+                </div></a>
+            })}
         </div>
-    </div></a>
-    })}
-    </div>
     </>
 }
 export default BodyCards;
