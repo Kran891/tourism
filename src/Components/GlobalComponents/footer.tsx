@@ -5,7 +5,7 @@ import FooterLogo from "../Homepage/footer-logo"
 const Footer:React.FC=()=>{
     return <>
     <div className="shadow-md ">
-    <div className="m-14 mt-2">    
+    <div className="lg:m-14 m-2 mt-2">    
     <span className="font-bold block my-4">Explore More On Rayna Tours</span>
     <FooterCities header='Best Selling UAE Tours :' cities={UAE_CITIES} />
     <FooterCities header='Trending Destinations :' cities={TRENDING_DESITINATIONS} />
