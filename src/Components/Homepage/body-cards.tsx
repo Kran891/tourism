@@ -9,8 +9,8 @@ const BodyCards: React.FC<Props> = ({ data, width }) => {
         <div className="lg:flex grid grid-cols-2 *:shadow-lg *:overflow-hidden gap-[1.5%]">
             {data.map(ele => {
                 return <a className="w-full lg:w-[25%] rounded-lg" href={ele.url}><div className="relative">
-                    <img src={ele.imgageUrl} className="h-[150px] w-full" alt={ele.header} />
-                    <h2 className="font-semibold">{ele.header}</h2>
+                    <img src={ele.imgageUrl} className="h-[180px] w-full" alt={ele.header} />
+                    <h2 className="font-semibold mt-2 mx-1 text-center">{ele.header}</h2>
                    
                         <div className={`flex bottom-0   justify-between items-end m-2 mt-auto`}>
                             <div>
