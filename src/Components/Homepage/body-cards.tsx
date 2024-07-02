@@ -13,7 +13,7 @@ const BodyCards: React.FC<Props> = ({ data, width }) => {
                 return <a className={`group sm:w-[25%]  rounded-2xl hover:bg-orange-200`} href={ele.url}><div className="relative group-hover:bg-orange-200">
                     <img src={ele.imgageUrl} className="h-[150px] w-full object-cover" alt={ele.header} />
                     <div className="mt-2 mx-1 pb-2 group-hover:bg-orange-200 align-bottom">
-                        <h2 className="font-semibold text-center">{ele.header.length>25?ele.header.substring(0,25)+"...":ele.header}</h2>
+                        <h2 className="font-semibold text-left sm:text-center">{ele.header.length>25?ele.header.substring(0,25)+"...":ele.header}</h2>
 
                         <div className={`flex justify-between  items-end mt-2`}>
                             <div>
