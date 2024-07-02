@@ -20,7 +20,7 @@ interface BodyCardProps {
 
 const Card:React.FC<CityCardProps | BodyCardProps> = ({heading,description,Card,...rest}) => {
   return <>
-  <div className='lg:m-14 m-2 mt-4'>
+  <div className='lg:mx-[7.5%]  m-2 mt-5'>
     <h1 className='font-bold text-[20px]'>{heading}</h1>
     <p className='text-[#707081] text-[13px] pt-2 pb-3'>{description}</p>
     { Card===CityCards && <CityCards data={(rest as CityCardProps).data}/>}

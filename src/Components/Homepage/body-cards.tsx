@@ -6,14 +6,14 @@ interface Props {
 }
 const BodyCards: React.FC<Props> = ({ data, width }) => {
     return <>
-        <div className="lg:flex grid grid-cols-2 *:shadow-lg *:overflow-hidden gap-[1.5%]">
+        <div className="lg:flex grid grid-cols-2 *:shadow-lg *:shrink-0  overflow-x-scroll *:overflow-hidden gap-[1.5%]">
             {data.map(ele => {
-                return <a className="w-full lg:w-[25%] rounded-lg" href={ele.url}><div className="relative">
-                    <img src={ele.imgageUrl} className="h-[180px] w-full" alt={ele.header} />
+                return <a className={`w-full lg:w-[${width}] rounded-2xl`} href={ele.url}><div className="relative">
+                    <img src={ele.imgageUrl} className="h-[150px] w-full" alt={ele.header} />
                     <div className="mt-2 mx-1 relative">
                         <h2 className="font-semibold text-center">{ele.header}</h2>
 
-                        <div className={`flex justify-between items-end m-2 mt-2`}>
+                        <div className={`flex justify-between items-end m-2 mt-10`}>
                             <div>
                                 <p className="text-gray-400 text-[12px]">{ele.reviews} Reviews</p>
                                 <p className="flex"><span className="flex">{[...Array(ele.rating)].map((_, i) => {
