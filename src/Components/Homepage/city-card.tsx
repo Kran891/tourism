@@ -27,7 +27,12 @@ const Card:React.FC<CityCardProps | BodyCardProps> = ({heading,description,Card,
   <div className='m-14 mt-4'>
     <h1 className='font-bold text-[20px]'>{heading}</h1>
     <p className='text-[#707081] text-[13px] pt-2 pb-3'>{description}</p>
+<<<<<<< HEAD
     {Card && <Card  data={data}/>}
+=======
+    { Card===CityCards && <CityCards data={(rest as CityCardProps).data}/>}
+    {Card === BodyCards && <BodyCards data={(rest as BodyCardProps).data} width={(rest as BodyCardProps).width}/>}
+>>>>>>> 571e36f6fd1a5add8702ee908c85722605edd8cc
   </div>
   </>
     
