@@ -15,8 +15,7 @@ import { EVENTS_CONST, EXP_ABU_DHABI, EXP_DUBAI } from './constansts/events-cons
 function App() {
   return (
     <div className='relative'>
-     {/* <Carousel /> */}
-      {/* <Header /> */}
+     {<Carousel />}
       <Card heading='Top Cities to Visit' description='Experience the thrill of discovering off-the-beaten-path gems and famous landmarks in top destinations worldwide - your wanderlust awaits!' Card={CityCards} data={CITYIMAGES}/>
       <Card heading='Most Popular Events & Concerts in UAE' description={`Dive into a mesmerizing blend of culture, music, and entertainment at the UAE's hottest events and concerts!`} Card={BodyCards} data={EVENTS_CONST} width='25%'/>
       <Card heading='Most Popular Experiences in Dubai' description={`Culture, nature, thrills, and record-breaking experiences—Dubai is the place to seek out everything you imagine and beyond. Find it all here!`} Card={BodyCards} data={EXP_DUBAI} width='20%'/>
