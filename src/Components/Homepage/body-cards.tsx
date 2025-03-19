@@ -1,7 +1,5 @@
 import { IoStarSharp } from "react-icons/io5";
 import { Events } from "../../constansts/events-const";
-import CityCards from "./city-cards";
-import FooterLogo from "./footer-logo";
 interface Props {
     data: Events[],
     width: string
@@ -10,7 +8,6 @@ const BodyCards: React.FC<Props> = ({ data, width }) => {
     const w=`sm:w-[${width}]`
     
     return <>
-       <FooterLogo />
         <div className="sm:flex grid grid-cols-2  pb-2 *:shadow-lg  *:shrink-0 overflow-x-auto *:overflow-hidden gap-[1.5%]">
             {data.map(ele => {
                 return <a className={`group sm:w-[25%]  rounded-2xl hover:bg-orange-200`} href={ele.url}><div className="relative group-hover:bg-orange-200">
